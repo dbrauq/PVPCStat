@@ -6,7 +6,7 @@
     Tool for obtaining and displaying the electricity prices of the PVPC rate in Spain.
     It also shows some basic statistical information.
 
-**Author:** David Brau (br4u2ls)
+**Author:** David Brau (dbrauq)
 
 **Overview:**
 
