@@ -172,7 +172,7 @@ else
 fi
 tput civis
 requestURL="https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real\
-?start_date=${date}T00:00&end_date=${date}T24:00&time_trunc=hour&geo_limit=peninsular"
+?start_date=${date}T00:00&end_date=${date}T23:59&time_trunc=hour&geo_limit=peninsular"
 JSONDataText=$(curl -s ${requestURL})
 if [ $(echo "${JSONDataText}" | grep "errors" | wc -m) -ne "0" ]; then
 	echo -e "${redColor}${boldColor}[!]${defaultColor}${redColor} The request returned errors. Please check -h (help) menu.${defaultColor}"
